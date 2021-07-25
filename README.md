@@ -7,6 +7,7 @@ Technologies
 - Pygame
 
 ToDo Checklist
+
 -[] Cleaning up the code
 -[] Getting the code to run
 -[] Getting the Chess AI engine to run in my main file
