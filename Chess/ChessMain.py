@@ -1,74 +1,77 @@
 
 import pygame as p
+from Engine import *
+from GUI import * 
 
+p.init()
+clock = p.time.Clock()
 
-class GameState():
-    def _init_(self):
-        # board is an 8x8 2d list, each element of the list has 2 characters,
-        # The first character represents the color of the piece, 'b' or 'w'
-        # The second character represents the type of piece, 'K', 'Q', 'R','B', 'N' or 'P'
-        # "--" represents an empty space with no piece
-        self.board = [
-            ["bR", "bN", "bB", "bQ", "bk", "bB", "bN", "bR"],
-            ["bp", "bp", "bp", "bp", "bp", "bp", "bp", "bp"],
-            ["--", "--", "--", "--", "--", "--", "--", "--"],
-            ["--", "--", "--", "--", "--", "--", "--", "--"],
-            ["--", "--", "--", "--", "--", "--", "--", "--"],
-            ["--", "--", "--", "--", "--", "--", "--", "--"],
-            ["wp", "wp", "wp", "wp", "wp", "wp", "wp", "wp"],
-            ["wR", "wN", "wB", "wQ", "wk", "wB", "wN", "wR"]]
-        self.white_to_move = True
-        self.moveLog = []
+win = p.display.set_mode((500, 500))
+p.display.set_caption('My-PyChess')
 
+# Initialize chess variables
+side = 0
+board = (
+        [[1, 7, "p"], [2, 7, "p"], [3, 7, "p"], [4, 7, "p"],
+        [5, 7, "p"], [6, 7, "p"], [7, 7, "p"], [8, 7, "p"],
+        [1, 8, "r"], [2, 8, "n"], [3, 8, "b"], [4, 8, "q"],
+        [5, 8, "k"], [6, 8, "b"], [7, 8, "n"], [8, 8, "r"]
+     ], [
+        [1, 2, "p"], [2, 2, "p"], [3, 2, "p"], [4, 2, "p"],
+        [5, 2, "p"], [6, 2, "p"], [7, 2, "p"], [8, 2, "p"],
+        [1, 1, "r"], [2, 1, "n"], [3, 1, "b"], [4, 1, "q"],
+        [5, 1, "k"], [6, 1, "b"], [7, 1, "n"], [8, 1, "r"]
+    ])
+flags = [[True for _ in range(4)], None]
 
-WIDTH = HEIGHT = 512
-DIMENSION = 8
-SQ_SIZE = HEIGHT // DIMENSION
-MAX_FPS = 15  # for animations later on
-IMAGES = {}
+sel = prevsel = [0, 0]
 
+# Main function for showing the chess board. Call it once every game loop. 
+def showScreen(win, side, board, flags, pos):
+    drawBoard(win)
+    if isEnd(side, board, flags):
+        if isChecked(side, board):
+            win.blit(CHECKMATE, (120, 0))
+            win.blit(PIECES[side]['k'], (270, 0))
+        else:
+            win.blit(STALEMATE, (150, 0))
+    else:
+        if isChecked(side, board):
+            win.blit(CHECK, (180, 0))
 
-def loadImages():
-    pieces = ['wp', 'wR', 'wN', 'wB', 'wK', 'wQ', 'bp', 'bR', 'bN', 'bB', 'bK', 'bQ']
-    for piece in pieces:
-        IMAGES[piece] = p.image.load("images/" + piece + ".png")
+        if isOccupied(side, board, pos):
+            x, y = pos[0]*50, pos[1]*50
+            p.draw.rect(win, (255, 255, 0), (x, y, 50, 50))
+    drawPieces(win, board)
 
+# return getChoice only if pawn has reached promotion state
+def getPromote(win, side, board, fro, to):
+    if getType(side, board, fro) == "p":
+        if (side == 0 and to[1] == 1) or (side == 1 and to[1] == 8):
+            return getChoice(win, side)
 
+running = True
+while running:
+    clock.tick(30)
+    # Iterate over events
+    for event in p.event.get():
+        if event.type == p.QUIT:
+            for event in p.event.get():
+                running = False
+        elif event.type == p.MOUSEBUTTONDOWN:
+            x, y = event.pos 
+            if 50 < x <450 and 50 < y <450:
+                x, y = x // 50, y // 50
+                prevsel = sel
+                sel = [x, y]
+            if isValidMove(side, board, flags, prevsel, sel):
+                promote = getPromote(win, side, board, prevsel, sel)
+                side, board, flags = makeMove(
+                    prevsel, sel, flags, promote)
+    # Show screen
+    showScreen(win, side, board, flags, sel)
+    p.display.update()
 
-def main():
-    p.init()
-    screen = p.display.set_mode((WIDTH, HEIGHT))
-    clock = p.time.Clock()
-    screen.fill(p.Color("white"))
-    gs = GameState()  
-    loadImages()
-    running = True
-    while running:
-        for e in p.event.get():
-            if e.type == p.QUIT:
-                    running = False
-        drawGameState(screen, gs)
-        clock.tick(MAX_FPS)
-        p.display.flip()
+    # Quit pygame
 
-
-def drawGameState(screen, self):
-    drawBoard(screen) # draw squares on the board
-    drawPieces(screen, self.board) # draw the pieces on top of those squares
-
-
-
-def drawBoard(screen):
-    colors = [p.Color("white"), p.Color("gray")]
-    for r in range(DIMENSION):
-        for c in range(DIMENSION):
-            color = colors[((r+c) % 2)]
-            p.draw.rect(screen, color, p.Rect(c*SQ_SIZE, r*SQ_SIZE, SQ_SIZE, SQ_SIZE))
-
-
-def drawPieces(screen, board):
-    pass
-
-
-if __name__ == "__main__":
-    main()
+       
