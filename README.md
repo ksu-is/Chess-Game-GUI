@@ -10,7 +10,9 @@ ToDo Checklist
 
 -[] Cleaning up the code
 
--[] Getting the code to run
+-[X] Getting the code to run
+
+-[] Get the chess board and pieces to display
 
 -[] Getting the Chess AI engine to run in my main file
 
