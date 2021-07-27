@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dcbcd1eb-9f9b-42ae-8da6-94a8912253d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/ChessMain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/bB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/bK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/bN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/bQ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/bR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/bp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/desktop.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/wB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/wK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/wN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/wQ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/wR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess/images/wp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Chess-Game-GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Chess-Game-GUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessMain.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chess_AI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/bB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/bK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/bN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/bQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/bR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/bp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/wB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/wK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/wN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/wQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/wR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/wp.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1vsAFVX28mOQwY7bsOoXlx8T0Cu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Chess" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lcart\OneDrive\Desktop\Code\Chess-Game-GUI\Chess" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.ChessMain">
+    <configuration name="ChessEngine" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Chess-Game-GUI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chess" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chess/ChessEngine" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ChessMain" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Chess-Game-GUI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chess" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chess/ChessMain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2">
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="__init__" run_configuration_type="PythonConfigurationType" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="ChessEngine" run_configuration_type="PythonConfigurationType" />
+      </method>
+    </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Chess-Game-GUI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chess" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chess/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ChessMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcbcd1eb-9f9b-42ae-8da6-94a8912253d2" name="Default Changelist" comment="" />
+      <created>1627340322519</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627340322519</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="__exception__" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
